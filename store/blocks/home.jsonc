@@ -1,6 +1,8 @@
 {
     "store.home": {
         "blocks": [
+            "rich-text#title",
+            "rich-text#subtitle"
             //reto 1
             // "flex-layout.row#contenedorInformacion",
             // "flex-layout.row#contendorQueEstasBuscando"
@@ -9,10 +11,22 @@
             // sesion 3 reto 1 y 2
             // "list-context.image-list#main-slider"
             // reto rendere
-             "list-context.image-list#main-slider"
+            //  "list-context.image-list#main-slider"
         ]
     },
 
+// ----------------reto plataforma-------------
+
+"rich-text#title":{
+    "props":{
+        "text":" # Nuestros Valores # "
+    }
+},
+"rich-text#subtitle":{
+    "props":{
+        "text":" *  Perseguimos el WOW de nuestros clientes <br> *  Perseguimos el aprendizaje y el crecimiento <br> *  Somos apasionados y disciplinados <br> *  Somos un equipo <br> *  Somos orientas a resultados"
+    }
+}
 ////////////////////////////////////////////////////////////////////////////////////////
 // -----------------RETO 1------------------------------------------------------------//
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -442,52 +456,52 @@
 // ----------------SESION 3 reto 2----------------------------------------------------//
 ////////////////////////////////////////////////////////////////////////////////////////
 
-"list-context.image-list#main-slider":{
-    "title":"carrusel",
-    "children":[
-        "slider-layout#main-slidersesion3-reto1"
-    ],
-    "props":{
-        "images":[
-            {
-                "image":"https://i.imgur.com/oY7YEDM.jpg",
-                "link":{
-                    "url":"/categoria"
-                }
-            },
-            {
-                "image":"https://i.imgur.com/oY7YEDM.jpg",
-                "link":{
-                    "url":"/categoria"
-                }
-            },
-            {
-                "image":"https://i.imgur.com/oY7YEDM.jpg",
-                "link":{
-                    "url":"/categoria"
-                }
-            }
-        ]
-    }
-},
-"slider-layout#main-slidersesion3-reto1":{
-    "props":{
-        "height":650,
-        "preload":true,
-        "itemsPerPage": {
-            "desktop": 1,
-            "phone":1
-        },
-        "infinite": true,
-        "autoplay": {
-            "timeout": 3500,
-            "stopOnHover": true
-        },
-        "showNavigationArrows":"always",
-        "showPaginationDots":"always"
-    }
+// "list-context.image-list#main-slider":{
+//     "title":"carrusel",
+//     "children":[
+//         "slider-layout#main-slidersesion3-reto1"
+//     ],
+//     "props":{
+//         "images":[
+//             {
+//                 "image":"https://i.imgur.com/oY7YEDM.jpg",
+//                 "link":{
+//                     "url":"/categoria"
+//                 }
+//             },
+//             {
+//                 "image":"https://i.imgur.com/oY7YEDM.jpg",
+//                 "link":{
+//                     "url":"/categoria"
+//                 }
+//             },
+//             {
+//                 "image":"https://i.imgur.com/oY7YEDM.jpg",
+//                 "link":{
+//                     "url":"/categoria"
+//                 }
+//             }
+//         ]
+//     }
+// },
+// "slider-layout#main-slidersesion3-reto1":{
+//     "props":{
+//         "height":650,
+//         "preload":true,
+//         "itemsPerPage": {
+//             "desktop": 1,
+//             "phone":1
+//         },
+//         "infinite": true,
+//         "autoplay": {
+//             "timeout": 3500,
+//             "stopOnHover": true
+//         },
+//         "showNavigationArrows":"always",
+//         "showPaginationDots":"always"
+//     }
 
-},
+// },
 
 // ////////////////////////////////////////////////////////////////////////////////////////
 // //----------------SESION 3 reto 3----------------------------------------------------//
@@ -643,4 +657,4 @@
 //           "itemElement": "li"
 //         }
 //     }
-// }
+ }
